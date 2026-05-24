@@ -39,7 +39,7 @@ def main():
     # Inisialisasi Play Queue (Double Linked List)
     play_queue = DoubleLinkedList()
     
-    # State untuk catalog pagination
+    # State untuk katalog per halaman
     catalog_page = 0
     songs_per_page = 10
     
@@ -58,7 +58,7 @@ def main():
         print("\n" + "=" * shutil.get_terminal_size().columns + "\n")
         
         print(f"  {BOLD}MENU UTAMA:{RESET}")
-        print(f"  {GREEN}[1]{RESET} Lihat Katalog Lagu (Paginasi SLL)")
+        print(f"  {GREEN}[1]{RESET} Lihat Katalog Lagu (Per Halaman SLL)")
         print(f"  {GREEN}[2]{RESET} Cari Lagu di Katalog (Pencarian SLL)")
         print(f"  {GREEN}[3]{RESET} Tampilkan Antrean Putar Aktual (Visualisasi DLL)")
         print(f"  {GREEN}[4]{RESET} Kelola Antrean (Tambah, Hapus, Acak, Bersihkan)")
@@ -70,7 +70,7 @@ def main():
         choice = input(f"\n{BOLD}Pilih menu (1-8): {RESET}").strip()
         
         if choice == '1':
-            # Paginasi Katalog Lagu SLL
+            # Tampilan Katalog Lagu Per Halaman SLL
             while True:
                 print(CLEAR_SCREEN)
                 draw_header(f"KATALOG LAGU - HALAMAN {catalog_page + 1}")
