@@ -1,4 +1,4 @@
-# Spotify CLI Music Player - Tugas Besar Struktur Data (Kelompok 9)
+# Tugas Besar Struktur Data (Kelompok 9)
 
 Penerapan **Single Linked List (SLL)** dan **Double Linked List (DLL)** 
 
@@ -55,7 +55,7 @@ Aplikasi dibagi secara modular ke dalam subdirektori `core/` untuk menyisakan be
 TUBES-STRUKDAT/
 ├── dataset/
 │   └── spotify-2023.csv             # Berkas dataset Spotify (953 lagu)
-├── core/                            # Paket Modul Struktur Data
+├── core/                            # Paket Modul buatan sendiri
 │   ├── song.py                      # Definisi kelas Song
 │   ├── sll.py                       # Implementasi SLLNode & SingleLinkedList (Selection Sort)
 │   ├── dll.py                       # Implementasi DLLNode & DoubleLinkedList (Shuffle)
